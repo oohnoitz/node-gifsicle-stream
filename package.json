@@ -1,0 +1,35 @@
+{
+  "name": "gifsicle-stream",
+  "version": "0.1.0",
+  "description": "The gifsicle command line utility as a readable/writable stream.",
+  "main": "lib/Gifsicle.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "gifsicle": "^2.0.1",
+    "memoizeasync": "^0.8.0",
+    "which": "^1.0.9"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "expect.js": "^0.3.1"
+  },
+  "scripts": {
+    "prepublish": "mocha",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oohnoitz/node-gifsicle.git"
+  },
+  "keywords": [
+    "gifsicle",
+    "gif",
+    "image",
+    "optimization",
+    "stream"
+  ],
+  "author": "Hung Tran <oohnoitz@gmail.com>",
+  "license": "BSD"
+}
