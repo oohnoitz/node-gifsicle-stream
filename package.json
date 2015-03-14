@@ -1,6 +1,6 @@
 {
   "name": "gifsicle-stream",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The gifsicle command line utility as a readable/writable stream.",
   "main": "lib/Gifsicle.js",
   "directories": {
@@ -16,7 +16,6 @@
     "expect.js": "^0.3.1"
   },
   "scripts": {
-    "prepublish": "mocha",
     "test": "mocha"
   },
   "repository": {
