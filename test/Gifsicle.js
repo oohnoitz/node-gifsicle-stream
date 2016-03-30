@@ -88,4 +88,35 @@ describe('Gifsicle', function() {
 
     gifsicle.end(new Buffer('finished', 'utf8'));
   });
+
+  describe('#destroy', function() {
+    describe('when called before the child process is launched', function() {
+      it('should kill the underlying child process', function() {
+        var gifsicle = new Gifsicle(['-w', '-O3']);
+
+        gifsicle.write('GIF89a');
+        gifsicle.destroy();
+        expect(gifsicle.process).not.to.be.ok();
+        expect(gifsicle.bufferedChunks).not.to.be.ok();
+      });
+    });
+
+    describe('when called after the child process is launched', function() {
+      it('should kill the underlying child process', function(done) {
+        var gifsicle = new Gifsicle(['-w', '-O3']);
+
+        gifsicle.write('GIF89a');
+        setTimeout(function waitForChildProcess() {
+          if (gifsicle.process) {
+            gifsicle.destroy();
+            expect(gifsicle.process).not.to.be.ok();
+            expect(gifsicle.bufferedChunks).not.to.be.ok();
+            done();
+          } else {
+            setTimeout(waitForChildProcess, 20);
+          }
+        }, 20);
+      });
+    });
+  });
 });
