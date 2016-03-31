@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/oohnoitz/node-gifsicle.git"
+    "url": "git://github.com/oohnoitz/node-gifsicle-stream.git"
   },
   "keywords": [
     "gifsicle",
