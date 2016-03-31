@@ -1,6 +1,6 @@
 {
   "name": "gifsicle-stream",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "The gifsicle command line utility as a readable/writable stream.",
   "main": "lib/Gifsicle.js",
   "directories": {
