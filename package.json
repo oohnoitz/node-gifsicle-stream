@@ -1,5 +1,5 @@
 {
-  "name": "gifsicle-stream",
+  "name": "gifsicle-stream-paras20xx",
   "version": "0.3.1",
   "description": "The gifsicle command line utility as a readable/writable stream.",
   "main": "lib/Gifsicle.js",
