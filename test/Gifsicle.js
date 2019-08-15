@@ -64,7 +64,7 @@ describe('Gifsicle', function() {
         done(new Error('Gifsicle emitted a `end` event when an error was expected.'));
       });
 
-    gifsicle.end(new Buffer('finished', 'utf-8'));
+    gifsicle.end(Buffer.from('finished', 'utf-8'));
   });
 
   it('should emit an error when processing with an invalid option', function(done) {
@@ -86,7 +86,7 @@ describe('Gifsicle', function() {
         done(new Error('Gifsicle emitted a `end` event when an error was expected.'));
       });
 
-    gifsicle.end(new Buffer('finished', 'utf8'));
+    gifsicle.end(Buffer.from('finished', 'utf8'));
   });
 
   describe('#destroy', function() {
