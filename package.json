@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "gifsicle": "^3.0.0",
-    "memoizeasync": "^0.8.0",
+    "memoizeasync": "^1.1.0",
     "which": "^1.0.9"
   },
   "devDependencies": {
