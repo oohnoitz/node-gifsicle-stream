@@ -7,7 +7,7 @@
     "test": "test"
   },
   "dependencies": {
-    "gifsicle": "^5.0.0",
+    "gifsicle": "^7.0.1",
     "memoizeasync": "^1.1.0",
     "which": "^2.0.2"
   },
